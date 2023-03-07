@@ -1,0 +1,47 @@
+CRITICAL - 2023-03-07 00:12:50 --> Invalid file: "templates\homeTemplate.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates\\homeTemplate.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('templates\\homeTemplate', [], true)
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 4 APPPATH/Controllers/Pagecontroller.php(22): view('pages/fitine_home')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-07 00:13:11 --> Invalid file: "templates\hometemplate.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates\\hometemplate.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('templates\\hometemplate', [], true)
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 4 APPPATH/Controllers/Pagecontroller.php(22): view('pages/fitine_home')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-07 00:13:13 --> Invalid file: "templates\hometemplate.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates\\hometemplate.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('templates\\hometemplate', [], true)
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 4 APPPATH/Controllers/Pagecontroller.php(22): view('pages/fitine_home')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-07 00:35:55 --> syntax error, unexpected single-quoted string ");", expecting "]"
+in APPPATH/Config/Routes.php on line 60.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-07 00:40:21 --> Unclosed '[' does not match ')'
+in APPPATH/Config/Routes.php on line 45.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
