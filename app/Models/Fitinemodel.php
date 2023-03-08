@@ -6,8 +6,16 @@ use CodeIgniter\Model;
 
 class Fitinemodel extends Model
 {
-    protected $db = \Config\Database::connect();
-    protected $table      = 'fiTine';
-    protected $primaryKey = 'fiTine_id';
     
+    protected function createFitines()
+    {
+        $db = db_connect();
+        $builder = $db->table('user_profile');
+        $builder->select('user_id,userDisplayName');
+        $query = $builder->get();
+        foreach($query->getResultArray() as $row){
+            echo $row['user_id'];
+            echo $row['userDisplayName'];
+        }
+    }
 }

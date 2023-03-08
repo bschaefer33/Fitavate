@@ -1,0 +1,707 @@
+ERROR - 2023-03-08 01:03:19 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=1728 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate_db', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#8 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate_db', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#7 {main}
+CRITICAL - 2023-03-08 01:03:19 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `fitavate_db`')
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 5 SYSTEMPATH/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 6 ROOTPATH/spark(97): CodeIgniter\CLI\Console->run()
+ERROR - 2023-03-08 01:04:50 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=1778 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate_db', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#8 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate_db', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#7 {main}
+CRITICAL - 2023-03-08 01:04:50 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `fitavate_db`')
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run([])
+ 5 SYSTEMPATH/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', [])
+ 6 ROOTPATH/spark(97): CodeIgniter\CLI\Console->run()
+ERROR - 2023-03-08 01:07:52 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=1899 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate_db', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#8 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate_db', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#7 {main}
+CRITICAL - 2023-03-08 01:07:52 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `fitavate_db`')
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run([])
+ 5 SYSTEMPATH/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', [])
+ 6 ROOTPATH/spark(97): CodeIgniter\CLI\Console->run()
+ERROR - 2023-03-08 01:39:42 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=2656 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#8 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#7 {main}
+CRITICAL - 2023-03-08 01:39:42 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `fitavate`')
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 5 SYSTEMPATH/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 6 ROOTPATH/spark(97): CodeIgniter\CLI\Console->run()
+ERROR - 2023-03-08 01:47:57 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=97550 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#5 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#9 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#15 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#8 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#3 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#7 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#13 {main}
+CRITICAL - 2023-03-08 01:47:57 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `userDisplayName`
+FROM `user_profile`', [], false)
+ 3 APPPATH/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/fitine_home.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 7 APPPATH/Controllers/Pagecontroller.php(17): view('pages/fitine_home')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-08 01:48:17 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=97550 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#5 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#9 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#15 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#8 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#3 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#7 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#13 {main}
+CRITICAL - 2023-03-08 01:48:17 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `userDisplayName`
+FROM `user_profile`', [], false)
+ 3 APPPATH/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/fitine_home.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 7 APPPATH/Controllers/Pagecontroller.php(17): view('pages/fitine_home')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-08 01:48:37 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=97550 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#5 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#9 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#15 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#8 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#3 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#7 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#13 {main}
+CRITICAL - 2023-03-08 01:48:37 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `userDisplayName`
+FROM `user_profile`', [], false)
+ 3 APPPATH/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/fitine_home.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 7 APPPATH/Controllers/Pagecontroller.php(17): view('pages/fitine_home')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-08 01:48:59 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=97550 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#5 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#9 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#15 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#8 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#3 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#7 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#13 {main}
+CRITICAL - 2023-03-08 01:48:59 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `userDisplayName`
+FROM `user_profile`', [], false)
+ 3 APPPATH/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/fitine_home.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 7 APPPATH/Controllers/Pagecontroller.php(17): view('pages/fitine_home')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-08 01:50:04 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=97550 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#5 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#9 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#15 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#8 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#3 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#7 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#13 {main}
+CRITICAL - 2023-03-08 01:50:04 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `userDisplayName`
+FROM `user_profile`', [], false)
+ 3 APPPATH/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/fitine_home.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 7 APPPATH/Controllers/Pagecontroller.php(17): view('pages/fitine_home')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-08 16:43:50 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=97550 in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Applications/A...', 173)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#5 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#9 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#15 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8080', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#8 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#11 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#3 /Applications/AMPPS/www/Fitavate/app/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(213): include('/Applications/A...')
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_ho...', Array, true)
+#7 /Applications/AMPPS/www/Fitavate/app/Controllers/Pagecontroller.php(17): view('pages/fitine_ho...')
+#8 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+#9 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+#10 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/AMPPS/www/Fitavate/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/A...')
+#13 {main}
+CRITICAL - 2023-03-08 16:43:50 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `userDisplayName`
+FROM `user_profile`', [], false)
+ 3 APPPATH/Views/pages/fitine_home.php(5): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/fitine_home.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 7 APPPATH/Controllers/Pagecontroller.php(17): view('pages/fitine_home')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-08 16:43:50 --> Undefined variable $query
+in APPPATH/Views/pages/fitine_home.php on line 11.
+ 1 APPPATH/Views/pages/fitine_home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH/Views/pages/fitine_home.php', 11)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/fitine_home.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 5 APPPATH/Controllers/Pagecontroller.php(17): view('pages/fitine_home')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-08 16:43:53 --> Undefined variable $query
+in APPPATH/Views/pages/fitine_home.php on line 11.
+ 1 APPPATH/Views/pages/fitine_home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH/Views/pages/fitine_home.php', 11)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/fitine_home.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/fitine_home', [], true)
+ 5 APPPATH/Controllers/Pagecontroller.php(17): view('pages/fitine_home')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pagecontroller->view('fitine_home')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagecontroller))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-08 16:50:44 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8081', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#7 {main}
+CRITICAL - 2023-03-08 16:50:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `fitavate`')
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 5 SYSTEMPATH/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 6 ROOTPATH/spark(97): CodeIgniter\CLI\Console->run()
+ERROR - 2023-03-08 16:51:39 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('127.0.0.1:8081', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#7 {main}
+CRITICAL - 2023-03-08 16:51:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `fitavate`')
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 5 SYSTEMPATH/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 6 ROOTPATH/spark(97): CodeIgniter\CLI\Console->run()
+ERROR - 2023-03-08 17:13:32 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fitavate', 3306, '', 0)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#5 /Applications/AMPPS/www/Fitavate/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', Array)
+#6 /Applications/AMPPS/www/Fitavate/spark(97): CodeIgniter\CLI\Console->run()
+#7 {main}
+CRITICAL - 2023-03-08 17:13:32 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `fitavate`')
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(103): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 5 SYSTEMPATH/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 6 ROOTPATH/spark(97): CodeIgniter\CLI\Console->run()

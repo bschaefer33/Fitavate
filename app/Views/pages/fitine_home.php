@@ -8,8 +8,15 @@
         <h2 class="SectionHeader">My FitTines</h2>
         <div class="myFitinesList">
         <!--display all where the user is creater-->
-
-    
+        <?php if(!empty($data) && is_array($data)) :?>
+            <?php foreach($data as $row):?>
+                <?php echo $row['user_id']; ?>
+                <?php echo $row['userDisplayName']; ?>
+            <?php endforeach;?>
+        <?php else: ?>
+            <h3>Nothing</h3>
+            <p>Couldnt find it</p>
+        <?php endif ?>
         </div>
         <h2 class="SectionHeader">Saved FitTines</h2>
         <div class="myFitinesList">
