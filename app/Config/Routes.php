@@ -39,7 +39,7 @@ $routes->get('(:segment)', [Pagecontroller::class, 'view']);
 use App\Controllers\Fitinecontroller;
 
 $routes->get('pages', [Fitinecontroller::class, 'home']);
-$routes->get('(:segment)', [Fitinecontroller::class, 'view']);
+$routes->get('(:segment)', [Fitinecontroller::class, 'home']);
 
 /*
  * --------------------------------------------------------------------
