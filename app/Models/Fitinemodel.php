@@ -11,11 +11,12 @@ class Fitinemodel extends Model
     {
         $db = db_connect();
         $builder = $db->table('user_profile');
-        $builder->select('user_id,userDisplayName');
-        $query = $builder->get();
-        foreach($query->getResultArray() as $row){
-            echo $row['user_id'];
-            echo $row['userDisplayName'];
+        if (! $db->simpleQuery('SELECT * FROM userFiTine')) {
+            return $db->error();
+        }else {
+            return $builder->get();
         }
+        
+
     }
 }

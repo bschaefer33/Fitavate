@@ -2,7 +2,6 @@
 
     <?= $this->section('content') ?>
         <h1 class="PageHeader">FitTines</h1>
-
         <a href="<?php echo site_url('fitine_new'); ?>">new fitine</a>
         <!--Find all the fitines linked to the user id use a selectable list-->
         <h2 class="SectionHeader">My FitTines</h2>

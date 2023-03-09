@@ -26,7 +26,7 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
+        'hostname' => 'localhost:8081',
         'username' => 'root',
         'password' => 'mysql',
         'database' => 'fitavate',

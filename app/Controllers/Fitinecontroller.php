@@ -15,7 +15,7 @@ class Fitinecontroller extends BaseController
     public function home()
     {
         $model = model(Fitinemodel::class);
-        $data['user_profile'] = $model->createFitines();
+        $data = $model->createFitines();
         return view('pages/fitine_home', $data);
     }
 
